@@ -1,0 +1,18 @@
+{
+  "name": "cv_checkout_lite",
+  "authors": [
+    "gehlotchirag <gehlotchirag1988@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "lib",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src = "lib/jquery/dist/jquery.min.js"></script>
+</head>
+<body>
+<div class="container" id="page">
+    <h2>Create Task </h2>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <form id = "taskForm">
+                    <label for="title">Enter Task Title: </label><input type="text" name = "title" class="form-control">
+                    <label for="description">Enter Task Description: </label> <input type="text" name = "description" class="form-control">
+                    <label for="priority">Select A Priority for Task </label>
+                    <select class="form-control" id="priority">
+                      <option>P0</option>
+                      <option>P1</option>
+                      <option>P2</option>
+                      <option>P3</option>
+                    </select>
+
+                    <button type="button" class="btn btn-default" onclick="taskManager.tasks.addTask()"> Add note </button>
+                    <button type="button" class="btn btn-default"> Cancel </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="panel panel-default">
+                <div class="panel-body">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <h2>My Task </h2>
+
+    <div class="row" id="mynotes">
+
+    </div>
+
+</div>
+
+<script src="app/main.js"></script>
+<script src="app/modules/task/task-service.js"></script>
+
+</body>
+</html>
